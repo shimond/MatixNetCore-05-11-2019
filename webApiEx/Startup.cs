@@ -61,7 +61,6 @@ namespace webApiEx
             //app.UseStaticFiles();
             //app.UseDefaultFiles();
             //app.UseMatrixMiddleware();
-            
             //app.Use(async (requestContext, next) =>
             //{
             //    await requestContext.Response.WriteAsync("Middleware1 (appuse1)");
