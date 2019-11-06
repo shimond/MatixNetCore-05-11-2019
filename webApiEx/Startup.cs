@@ -56,29 +56,32 @@ namespace webApiEx
             {
                 endpoints.MapControllers();
             });
+
+
+            //app.UseStaticFiles();
+            //app.UseDefaultFiles();
+            //app.UseMatrixMiddleware();
+            
+            //app.Use(async (requestContext, next) =>
+            //{
+            //    await requestContext.Response.WriteAsync("Middleware1 (appuse1)");
+            //    await next();
+            //    await requestContext.Response.WriteAsync("    Middleware1 (appuse2)");
+            //});
+
+            //app.Run(async (context) => {
+            //    await context.Response.WriteAsync("App.Run");
+            //});
+
+            //app.Use(async (requestContext, next) =>
+            //{
+            //    await requestContext.Response.WriteAsync("Middleware2 (appuse1)");
+            //    await requestContext.Response.WriteAsync("    Middleware2 (appuse2)");
+            //});
+
         }
 
 
-//        app.UseStaticFiles();
-//            app.UseDefaultFiles();
-//            app.UseMatrixMiddleware();
-
-//            app.Use(async(requestContext, next) => 
-//            {
-//                await requestContext.Response.WriteAsync("Middleware1 (appuse1)");
-//        await next();
-//        await requestContext.Response.WriteAsync("    Middleware1 (appuse2)");
-//    });
-
-//            app.Run(async (context) => { 
-//                await context.Response.WriteAsync("App.Run");
-//});
-
-//            app.Use(async (requestContext, next) =>
-//            {
-//                await requestContext.Response.WriteAsync("Middleware2 (appuse1)");
-//await requestContext.Response.WriteAsync("    Middleware2 (appuse2)");
-//            });
 
     }
 }
